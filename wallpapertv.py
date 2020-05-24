@@ -19,10 +19,8 @@ cv2.imshow("Threshold",th1)
 cv2.waitKey(0)
 
 #2.3 get the points
-
-mask = np.zeros(img_g.shape,np.uint8)
-pixelpoints = cv2.findNonZero(mask)
-print(pixelpoints)
+pixel = np.argwhere(th1) #to get the pixel location (y,x) of white areas in binary image
+print(pixel)
 cv2.destroyAllWindows()
 
 
