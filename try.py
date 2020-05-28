@@ -12,7 +12,7 @@ success=1
 count = 0;
 s, image= vid.read()
 height , width , layers =  image.shape
-new_h=200
+new_h=200 # give the height and width from the contour points
 new_w=200
 print("I am in success")    
 images = []    
